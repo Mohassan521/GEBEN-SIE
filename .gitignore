@@ -10,6 +10,9 @@
 
 # production
 /build
+/node_modules
+.dockerignore
+dockerfile
 
 # misc
 .DS_Store

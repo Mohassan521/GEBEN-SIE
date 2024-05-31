@@ -1,38 +1,694 @@
-.App {
+.flex-fill {
+  min-width: calc(20% - 5px);
+  max-width: calc(30% - 5px);
+}
+
+h1,
+.headerText,
+h6 {
+  font-family: "zuume", Sans-serif !important;
+  max-width: 600px;
+  margin: auto;
+  margin-bottom: 10px;
+}
+
+td {
+  width: 200px;
+}
+
+
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: 'liga';
+}
+
+/* Rules for sizing the icon. */
+.material-icons.md-18 {
+  font-size: 18px;
+}
+
+.material-icons.md-24 {
+  font-size: 24px;
+}
+
+.material-icons.md-36 {
+  font-size: 36px;
+}
+
+.material-icons.md-48 {
+  font-size: 48px;
+}
+
+/* Rules for using icons as black on a light background. */
+.material-icons.md-dark {
+  color: rgba(0, 0, 0, 0.54);
+}
+
+.material-icons.md-dark.md-inactive {
+  color: rgba(0, 0, 0, 0.26);
+}
+
+/* Rules for using icons as white on a dark background. */
+.material-icons.md-light {
+  color: rgba(255, 255, 255, 1);
+}
+
+.material-icons.md-light.md-inactive {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+label {
+  font-size: 10px;
+}
+
+small {
+  font-size: 9px;
+}
+
+#container {
+  height: 400px;
+}
+
+.highcharts-figure,
+.highcharts-data-table table {
+  min-width: 100%;
+  max-width: 100%;
+  margin: 1em auto;
+}
+
+.highcharts-data-table table {
+  /* font-family: Verdana, sans-serif; */
+  border-collapse: collapse;
+  border: 1px solid transparent;
+  margin: 10px auto;
   text-align: center;
+  width: 100%;
+  max-width: 500px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.highcharts-data-table caption {
+  padding: 1em 0;
+  font-size: 1.2em;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+body {
+  background-color: #FFFFFF;
+  font-family: 'Montserrat'
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+
+.highcharts-data-table th {
+  font-weight: 600;
+  padding: 0.5em;
+}
+
+.highcharts-data-table td,
+.highcharts-data-table th,
+.highcharts-data-table caption {
+  padding: 0.5em;
+}
+
+.highcharts-data-table thead tr,
+.highcharts-data-table tr:nth-child(even) {
+  background: #f8f8f8;
+}
+
+.highcharts-data-table tr:hover {
+  background: #f1f7ff;
+}
+
+.form-control {
+  border: 1px solid transparent;
+  text-align: center;
+  height: 44px;
+  font-size: 19px;
+  font-weight: 500;
+}
+
+.highcharts-figure,
+.highcharts-data-table table {
+  min-width: 100%;
+  max-width: 100%;
+  margin: 1em auto;
+}
+
+.highcharts-data-table table {
+  border-collapse: collapse;
+  border: 1px solid #ebebeb;
+  margin: 10px auto;
+  text-align: center;
+  width: 100%;
+  max-width: 500px;
+}
+
+.highcharts-data-table caption {
+  padding: 1em 0;
+  font-size: 1.2em;
+  color: #555;
+}
+
+.highcharts-data-table th {
+  font-weight: 600;
+  padding: 0.5em;
+}
+
+.highcharts-data-table td,
+.highcharts-data-table th,
+.highcharts-data-table caption {
+  padding: 0.5em;
+}
+
+.highcharts-data-table thead tr,
+.highcharts-data-table tr:nth-child(even) {
+  background: #f8f8f8;
+}
+
+.highcharts-data-table tr:hover {
+  background: #f1f7ff;
+}
+
+.icons {
+  background-color: #e6e6e6;
+  border-radius: 50%;
+  padding: 8px 14px;
+}
+
+@media (max-width:990px) {
+  .margin_topResponsive {
+      margin-top: 50px !important;
   }
-  to {
-    transform: rotate(360deg);
+
+  .margin_top {
+      margin-top: 20px;
+      margin-bottom: 20px;
   }
+
+}
+
+.anchorLInk {
+  color: #fff;
+}
+
+.anchorLInk:hover {
+  color: #f4f4f4;
+  text-decoration: none;
+}
+
+@media (max-width:1200px) {
+  .setPd {
+      padding-top: 30px !important;
+  }
+}
+
+@media (max-width:576px) {
+  .col-sm-6 {
+      border-right: 0px !important;
+      text-align: center;
+      margin-top: 20px;
+  }
+
+  .text-center img {
+      width: 300px !important;
+  }
+}
+
+@media (max-width:500px) {
+  .card {
+      padding: 40px 20px !important;
+  }
+}
+
+@media (max-width:350px) {
+
+  .text-center img {
+      width: 200px !important;
+  }
+}
+
+.table {
+  text-align: center;
+}
+
+/* NEW DESIGH */
+
+.card {
+  margin: auto;
+  border-radius: 8px;
+  padding: 25px;
+  box-shadow: 0px 15px 30px 0px white;
+  border: none;
+  margin-top: 60px;
+}
+
+.cardStyle {
+  margin: auto;
+  border-radius: 8px;
+  padding: 25px;
+  box-shadow: 0px 15px 30px 0px rgba(119, 123, 146, 0.1);
+  border: none;
+}
+
+.smallCard {
+  margin: auto;
+  border-radius: 8px;
+  padding: 15px;
+  /* box-shadow: 0px 15px 30px 0px rgba(119, 123, 146, 0.1); */
+  box-shadow: 0px 2px 9px 0px rgba(119, 123, 146, 0.1);
+  border: none;
+  margin: 10px 5px;
+}
+
+.inputWrap label {
+  /* min-height: 40px; */
+  margin-bottom: 0px;
+  /* margin-top: 10px; */
+}
+
+.inputWrap input {
+  height: 40px;
+  border: 1px solid #cccccc !important;
+  padding: 5px 10px !important;
+  font-size: 13px !important;
+  border-radius: 0px !important;
+}
+
+.inputSubHeading h6 {
+  font-weight: 500 !important;
+  font-size: 18px;
+}
+
+.btnCustomStyle {
+  background: #2400FF !important;
+  color: #FFFFFF;
+  font-size: 13px;
+  font-weight: bold;
+  padding: 10px 10px !important;
+  border-radius: 4px !important;
+  max-height: 40px;
+  margin-top: 20px;
+  width: 100%;
+}
+
+.mainResult {
+  text-align: center;
+}
+
+.mainResult h1 {
+  color: #333333;
+  font-weight: bold;
+}
+
+.resultLabel {
+  text-align: center;
+}
+
+.marginTopFromResult {
+  margin-top: 40px;
+}
+
+.resultWrap {
+  text-align: center;
+}
+
+.resultWrap label {
+  margin-bottom: 0px;
+  font-size: 12px !important;
+  font-weight: bold;
+}
+
+.marginTop {
+  margin-top: 40px;
+}
+
+.active {
+  background: #2400FF;
+  color: #FFFFFF;
+}
+
+.tableBtn {
+  box-shadow: 0px 0px 50px 0px rgba(119, 123, 146, 0.1);
+}
+
+.whatIf h2 {
+  font-weight: bold;
+}
+
+/* TAB STYLE */
+.nav-tabs {
+  width: 100%;
+  margin: auto;
+  justify-content: center;
+  border-bottom: 0px !important;
+  margin-bottom: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.tab {
+  color: #0083BB;
+  padding: 10px;
+  text-align: center;
+  flex-grow: 1;
+  cursor: pointer;
+  margin-top: 5px;
+  border: 1px solid transparent;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.tab-1 {
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+}
+
+.tab-2 {
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
+
+.tab a {
+  text-decoration: none !important;
+  color: #0083BB;
+  font-weight: 600;
+  font-size: 13px;
+}
+
+.active {
+  background: #2400FF;
+  color: #FFFFFF;
+}
+
+.active a {
+  background: #2400FF;
+  color: #FFFFFF;
+}
+
+table {
+  max-width: 100px !important;
+}
+
+.table-responsive {
+  max-height: 400px;
+  max-width: 600px;
+  margin: auto;
+}
+
+/* width */
+body ::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+body ::-webkit-scrollbar-track {
+  border: 1px solid transparent;
+}
+
+/* Handle */
+body ::-webkit-scrollbar-thumb {
+  background: #2400FF;
+}
+
+/* Handle on hover */
+body ::-webkit-scrollbar-thumb:hover {
+  background: #2400FF;
+}
+
+table th {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+table td {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.logoImg img {
+  width: 100%;
+  max-width: 500px;
+}
+
+@media (max-width:768px) {
+  .resultWrap {
+      margin-top: 20px;
+  }
+
+  .marginTopOnMob {
+      margin-top: 40px;
+  }
+
+  .card {
+      margin-top: 30px;
+  }
+}
+
+.brandImg {
+  padding: 5px;
+  text-align: center;
+}
+
+.brandingAds {
+  text-decoration: none;
+  color: #333333;
+}
+
+.brandingAds:hover {
+  text-decoration: none;
+  color: #333333;
+}
+
+.brandImg img {
+  width: 100%;
+  max-width: 200px;
+}
+
+.alignCenter {
+  align-items: center;
+  border: 1px solid transparent;
+  min-height: 150px;
+}
+
+.alignCenter:hover {
+  border: 1px solid #2400FF;
+}
+
+@media (max-width: 992px) {
+
+  .table td,
+  .table th {
+      padding: 5px !important;
+      font-size: 12px;
+  }
+
+  .cardStyle {
+      padding: 25px 15px;
+  }
+}
+
+@media (max-width: 475px) {
+  .card {
+      padding: 40px 10px !important;
+  }
+
+  .cardStyle {
+      padding: 25px 5px;
+  }
+
+  .table td,
+  .table th {
+      padding: 5px !important;
+      font-size: 12px;
+  }
+}
+
+.displayFlexStyle {
+  justify-content: space-evenly !important;
+  text-align: center !important;
+}
+
+/* NEW TOOLTIP OR OTHER STYLES */
+
+.chd-hasTooltip {
+  cursor: pointer;
+  font-size: 10px;
+  font-weight: 700;
+  border: 1px solid #2400FF;
+  border-radius: 50%;
+  height: 18px;
+  width: 18px;
+  line-height: 1.4;
+  text-align: center;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  color: #2400FF;
+  padding: 7px;
+  /* margin-bottom: 10px; */
+  background: white;
+  box-sizing: border-box;
+
+}
+
+.chd-hasTooltip:hover {
+  background-color: #3139F2;
+  color: white;
+}
+
+
+.chd-tooltip {
+  display: block;
+  position: absolute;
+  top: -13px;
+  left: -81px;
+  transform: translate(-50%, -50%) scale(0.75) rotate(5deg);
+  transform-origin: bottom center;
+  background: rgba(0, 0, 0, 0.75);
+  text-align: left;
+  color: white;
+  transition: 0.15s ease-in-out;
+  opacity: 0;
+  width: 12em;
+  pointer-events: none;
+  z-index: 10;
+  border-bottom: 1px solid #2400FF;
+  border-radius: 4px 4px 0px 4px;
+  /* box-shadow: inset 0 0 10px; */
+}
+
+.chd-tooltip {
+  background: white;
+  color: black;
+  box-shadow: 0 .3px 3px #34617075;
+}
+
+.chd-tooltip:after {
+  border-top: 5px solid #346170;
+}
+
+.chd-tooltip:hover {
+  opacity: 1;
+  transform: translate(-50%, -100%) scale(1) rotate(0deg);
+  pointer-events: inherit;
+  /* background-color: #3139F2; */
+}
+
+.chd-tooltip img {
+  max-width: 100%;
+}
+
+.chd-tooltip:after {
+  content: "";
+  display: block;
+  margin: 0 auto;
+  width: 0;
+  height: 0;
+  border: 8px solid white;
+  border-top: 8px solid #2400FF;
+  border-bottom: 0;
+  position: absolute;
+  bottom: 0;
+  left: 96.5%;
+  transform: translate(-50%, 100%);
+}
+
+.chd-toltipField {
+  position: relative;
+  padding: 0px 0px;
+}
+
+.chd-tooltip p {
+  font-size: 14px;
+  padding: 15px;
+  font-weight: 500;
+  color: #202020;
+  margin-bottom: 0px;
+}
+
+.active-tooltip {
+  opacity: 1;
+  transform: translate(-50%, -100%) scale(1) rotate(0deg);
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+}
+
+.flex-center .chd-hasTooltip {
+  margin: 0;
+  margin-top: -1px;
+  margin-left: 5px;
+}
+
+.flex-center .chd-tooltip {
+  left: 174px;
+  top: -11px;
+  border-radius: 4px 4px 4px 0;
+  width: 24em;
+}
+
+.flex-center .chd-tooltip:after {
+  left: 7px;
+}
+
+.gapingForI {
+  /* gap: 5px; */
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom:5px;
+}
+
+.headingStyle h4{
+  font-size: 18px;
+  font-weight: 600;
+}
+
+
+.input-group-prepend {
+  position: relative;
+}
+
+.input-wrapper {
+  position: relative;
+}
+
+.input-wrapper .form-control {
+  padding-right: 30px; /* Add padding to the right to make space for the symbol */
+}
+
+.data-symbol {
+  position: absolute;
+  font-size: 16px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #495057;
+  pointer-events: none; /* Prevents the symbol from being clickable or interfering with input */
 }
