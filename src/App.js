@@ -469,7 +469,8 @@ function App() {
                                 event.stopPropagation();
                               });
                             });
-                          }}>i</div>
+                          }
+                          }>i</div>
                           <span className="chd-tooltip">
                             <p>
                               Der Beitrag, den du monatlich für die Rente
